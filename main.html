@@ -4,39 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessible Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header role="heading">
-        <h1>My Portfolio</h1>
+    <header role="banner">
+        <h1 role="heading" aria-level="1">My Accessible Portfolio</h1>
     </header>
-
     <nav role="navigation">
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li role="listitem"><a href="#">Home</a></li>
+            <li role="listitem"><a href="#">About</a></li>
+            <li role="listitem"><a href="#">Contact</a></li>
         </ul>
     </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="A photo of me" role="img">
-        <p>I am a web developer passionate about creating accessible and inclusive websites.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul role="list">
-            <li role="listitem">Accessible Blog Website</li>
-            <li role="listitem">Inclusive E-commerce Platform</li>
-            <li role="listitem">Responsive Portfolio Template</li>
-        </ul>
-    </section>
-
-    <footer id="contact" role="contentinfo">
-        <h2>Contact Me</h2>
-        <p>Email: example@example.com</p>
-    </footer>
+    <main>
+        <section>
+            <img src="image.jpg" alt="Description of the image" role="img">
+            <p>Brief description of your skills and experience.</p>
+            <ul role="list">
+                <li role="listitem">Skill 1</li>
+                <li role="listitem">Skill 2</li>
+                <li role="listitem">Skill 3</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
+
